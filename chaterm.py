@@ -23,5 +23,5 @@ if __name__ == '__main__':
             break
         messages = [{"role":"system","content":"you are a helpful assistant,answer the given question"},
                     {"role": "user", "content": question}]
-        print("\033[33m>AI is thinking...>")
+        print("\033[34m>AI is thinking...>")
         print(get_completion_from_messages(messages)+"\033[0m")
