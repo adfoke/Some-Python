@@ -23,7 +23,10 @@
 #                     ['山泽损', '风雷益', '泽天夬', '天风姤', '泽地萃', '地风升', '泽水困', '水风井'],
 #                     ['泽火革', '火风鼎', '震为雷', '艮为山', '风山渐', '雷泽归妹', '雷火丰', '火山旅'],
 #                     ['巽为风', '兑为泽', '风水涣', '水泽节', '风泽中孚', '雷山小过', '水火即济', '火水未济']]
-
+#1元 = 12会 = 129600年
+#1会 = 30运 = 10800年
+#1运 = 12世 = 360年
+#1世        = 30年
 
 from collections import namedtuple
 
@@ -43,6 +46,6 @@ earthly_branches = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申
 heavenly_branches_earthly_branches = HeavenlyStemsEarthlyBranches(heavenly_stems, earthly_branches)
 combinations = heavenly_branches_earthly_branches.combinations
 
-# Accessing the elements of a named tuple
+#Accessing the elements of a named tuple
 for combination in combinations:
-    print(combination.heavenly_stem + combination.earthly_branch)
+     print(combination.heavenly_stem + combination.earthly_branch)
